@@ -1,0 +1,35 @@
+{
+  box-sizing: border-box;
+  }
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  border: 3px solid green;
+}
+
+h3 {
+  font-family: 'Abril Fatface', cursive;
+  font-family: 'Cormorant SC', serif;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+ul {
+  list-style-type: disc;
+  margin: 1rem;
+  display: inline-block;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Cormorant SC, serif';
+  font-size: 16px;
+}
+
+
+ol  {
+  list-style-position: inside;
+  list-style: decimal;
+  padding: 1rem;
+  font-family: 'Cormorant SC, serif';
+  font-size: 16px;
+}
