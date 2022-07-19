@@ -4,30 +4,21 @@ let seattle = {
   min: 23,
   max: 65,
   avg: 6.3,
-  openHour: 6,
-  closingHour: 20,
   cookieStoreEachHour: [],
   getRandomCustomers: function(){
   return Math.floor(Math.random() * (this.max - this.min +1) + this.min);
   },
   calcCookiesPerHour: function(){
-    let customerThisHour = this.getRandomCustomers();
-    let cookiesSoldThisHour = Math.ceil(customerThisHour * this.avg);
-   let cookieStoreEachHour = cookiesSoldThisHour;
     
+      
+    
+    console.log(this.cookieStoreEachHour);
+    for (let i = 0; i < 14; i++){
+      let customerThisHour = this.getRandomCustomers();
+      let cookiesSoldThisHour = Math.ceil(customerThisHour * this.avg);
+      this.cookieStoreEachHour.push(cookiesSoldThisHour);
    
-   console.log(cookiesSoldThisHour);
-   console.log(cookieStoreEachHour);
-   
-    /*
-    function cookieStoreEachHour() {
-      let totalCookies = 0;
-      for () {
-
-      }
     }
-    */
-   
   }
 }
 seattle.calcCookiesPerHour();
