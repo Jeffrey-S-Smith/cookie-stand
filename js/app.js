@@ -9,9 +9,6 @@ let seattle = {
   return Math.floor(Math.random() * (this.max - this.min +1) + this.min);
   },
   calcCookiesPerHour: function(){
-    
-      
-    
     console.log(this.cookieStoreEachHour);
     for (let i = 0; i < 14; i++){
       let customerThisHour = this.getRandomCustomers();
@@ -20,8 +17,24 @@ let seattle = {
    
     }
   }
-}
+ 
+  }
+ 
 seattle.calcCookiesPerHour();
+
+render: function(){
+  this.calcCookiesPerHour();
+  let list = document.getElementById('seattle');
+  for (let i=0; i < cookieStoreEachHour.length; i++) {
+    let li = document.createElement('li');
+      li.textContent = `${cookieStoreEachHour[i]}: ${this.calcCookiesPerHour[i]}`;
+      list.appendChild(li);
+  }
+  let li = document.createElement('li');
+    li.textContent = `Total: ${this.currentTotal}`;
+    list.appendChild(li);
+}
+
 /*
 let tokyo = {
   name:'Tokyo',
@@ -91,7 +104,6 @@ let lima = {
   }
 }
 lima.calcCookiesPerHour();*/
-
 
 
 
