@@ -5,6 +5,7 @@ let seattle = {
   max: 65,
   avg: 6.3,
   cookieStoreEachHour: [],
+  currentTotal: 0, 
   getRandomCustomers: function(){
   return Math.floor(Math.random() * (this.max - this.min +1) + this.min);
   },
@@ -16,16 +17,12 @@ let seattle = {
       this.cookieStoreEachHour.push(cookiesSoldThisHour);
    
     }
-  }
- 
-  }
- 
-seattle.calcCookiesPerHour();
+  },
 
-/*render: function(){
+  render: function(){
   this.calcCookiesPerHour();
   let list = document.getElementById('seattle');
-  for (let i=0; i < cookieStoreEachHour.length; i++) {
+  for (let i = 0; i < cookieStoreEachHour.length; i++) {
     let li = document.createElement('li');
       li.textContent = `${cookieStoreEachHour[i]}: ${this.calcCookiesPerHour[i]}`;
       list.appendChild(li);
@@ -33,7 +30,13 @@ seattle.calcCookiesPerHour();
   let li = document.createElement('li');
     li.textContent = `Total: ${this.currentTotal}`;
     list.appendChild(li);
-}*/
+}
+ 
+  }
+ 
+seattle.calcCookiesPerHour();
+
+
 
 
 let tokyo = {
