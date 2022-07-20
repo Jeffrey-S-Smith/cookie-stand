@@ -1,17 +1,17 @@
 'use strict';
 let hours = ['6 a.m.', '7 a.m.',  '8a.m.', '9a.m.', '10a.m.', '11a.m.', '12p.m.', '1p.m.', '2p.m.', '3p.m', '4p.m.', '5p.m.', '6p.m.', '7p.m.'];
-let seattle = {
-  name:'Seattle',
-  min: 23,
-  max: 65,
-  avg: 6.3,
-  cookieStoreEachHour: [],
-  currentTotal: 0,
+function Store(name,min,max,avg) {
+  this.name=name;
+  this.min =min;
+  this.max= max;
+  this.avg= avg;
+  this.cookieStoreEachHour = [];
+  this.currentTotal= 0;
     
-  getRandomCustomers: function(){
+  this.getRandomCustomers = function(){
   return Math.floor(Math.random() * (this.max - this.min +1) + this.min);
-  },
-  calcCookiesPerHour: function(){
+  };
+  this.calcCookiesPerHour= function(){
     console.log(this.cookieStoreEachHour);
     for (let i = 0; i < hours.length; i++){
       let customerThisHour = this.getRandomCustomers();
@@ -19,9 +19,9 @@ let seattle = {
       this.cookieStoreEachHour.push(cookiesSoldThisHour);
       this.currentTotal += cookiesSoldThisHour;
     }
-  },
+  };
 
-  render: function(){
+  this.render= function(){
   this.calcCookiesPerHour();
   let list = document.getElementById('seattle');
   
@@ -38,8 +38,16 @@ let seattle = {
 }
  
   }
- 
+ let seattle = new Store('seatle',23,65,6.3);
+ let tokyo = new Store('seatle',23,65,6.3);
+ let dubai = new Store('seatle',23,65,6.3);
+ let paris = new Store('seatle',23,65,6.3);
+ let lima = new Store('seatle',23,65,6.3);
 seattle.render();
+tokyo.render();
+dubai.render();
+paris.render();
+lima.render();
 
 
 /*
