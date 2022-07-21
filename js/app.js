@@ -99,9 +99,7 @@ paris.renderTable();
 lima.renderTable();
 renderFooter();
 
-/*let tdSale = document.createElement('td');
-    tdSale.textContent = this.cookieStoreEachHour[i];
-    tRow.appendChild(tdSale); */
+
 function renderFooter() {
   let tableFooter = document.querySelector("tfoot");
   let fTr = document.createElement("tr");
@@ -120,9 +118,6 @@ function renderFooter() {
     fTr.appendChild(fHdr);
     tableFooter.appendChild(fTr);
   }
-  /*fHdr = document.createElement("th");
-  fHdr.textContent = allStoreTotal;
-  fTr.appendChild(fHdr);*/
  
 }
 
