@@ -99,7 +99,6 @@ paris.renderTable();
 lima.renderTable();
 renderFooter();
 
-
 function renderFooter() {
   console.log(Store.length);
   console.log(Store);
@@ -121,7 +120,6 @@ function renderFooter() {
     fTr.appendChild(fHdr);
     tableFooter.appendChild(fTr);
   }
- 
 }
 
 let form = document.querySelector('form');
