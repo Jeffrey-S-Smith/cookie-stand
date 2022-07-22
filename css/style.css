@@ -1,84 +1,92 @@
-* {
-  box-sizing: border-box;
+table > table, td, th {
+  border: 1px solid black;
+  border-collapse: collapse;
 }
 
-header {
-  background-color: lightcyan;
+td, th {
+  padding: 5px;
+  color: rgb(9, 17, 156);
+  font-family: Arial, Helvetica;
 }
 
-body {
-  background-color: rgb(224, 193, 193);
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-h1 {
-  font-size: 3rem;
-  /*font-style: italic;*/
-  padding: 1rem;
-  color:  rgb(10, 11, 11);
-  border-bottom: 10px double rgb(7, 13, 14);
-}
-
-main {
-  width: 80%;
-  margin: 3rem auto;
-}
-
-article {
-  border: 1px solid rgb(112, 159, 165);
-  padding: 1rem;
-  margin: 1rem;
-}
-
-h2 {
-  color: rgb(112, 159, 165);
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-}
-
-h3 {
-  color: rgb(112, 159, 165);
-  font-size: 2rem;
-  margin-bottom: 1rem;
+fieldset {
+  margin-bottom: 5px;
 }
 
 ul {
-  margin-left: 1rem;
-  list-style: square;
-  margin-bottom: 1rem;
+  list-style-type: none;
+  padding-left: 0px;
 }
 
-p {
-  margin-bottom: 1rem;
+p, li {
+  font-family: "Georgia";
+  color: whitesmoke;
+}
+
+body {
+  background-color: salmon;
+}
+
+.headline {
+  font-family: 'Libre Bodoni', serif;
+  font-family: 'Suez One', serif;
+  color: navy;
+}
+
+.center {
+  text-align: center;
+}
+
+.container {
+  background-color: slategrey;
+  width: 600px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+#chinook {
+  display: block;
+  margin: 0 auto;
+}
+
+#family {
+  height: 200px;
+  width: 350px;
+}
+
+#three-image-div > img {
+  padding: 20px;
+}
+
+#about p {
+  width: 500px;
+  margin: 0 auto;
+}
+
+#title {
+  color: black;
+}
+
+#table-container {
+  width: 900px;
+  padding: 5px 25px 10px;
+
+}
+
+#sales-title {
+  color: silver;
+  font-family: Arial, Helvetica;
+}
+
+#new-store-form {
+  width: 1225px;
+  margin: 0 auto;
 }
 
 footer {
-  padding: 1rem;
+  margin-bottom: auto;
 }
 
-a {
-  color: rgb(112, 159, 165);
-}
 
-/* .test-class {
- border: 2px solid purple;
-} */
 
-/* TABLE STYLES */
 
-table, td, th {
-  border: 1px solid rgb(1, 10, 11);
-}
-table {
-  margin: 1rem;
-}
-td, th {
-  padding: 1rem;
-}
-thead th {
-  font-weight: bold;
-}
-tfoot {
-  background-color: rgba(112, 159, 165, .1);
-}

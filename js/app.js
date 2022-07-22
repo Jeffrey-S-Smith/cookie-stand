@@ -100,6 +100,9 @@ lima.renderTable();
 renderFooter();
 
 function renderFooter() {
+  console.log(Store.length);
+  console.log(Store);
+  console.log(Store.all);
   let tableFooter = document.querySelector("tfoot");
   let fTr = document.createElement("tr");
   let fHdr = document.createElement("th");
@@ -108,7 +111,7 @@ function renderFooter() {
   let allStoreTotal = 0;
   for (let i = 0; i < hours.length; i++) {
     let hourlyTotal = 0;
-    for (let j = 0; j < Store.length; j++) {
+    for (let j = 0; j < Store.all.length; j++) {
       hourlyTotal += Store.all[j].cookieStoreEachHour[i];
       allStoreTotal += Store.all[j].cookieStoreEachHour[i];
     }
@@ -119,3 +122,24 @@ function renderFooter() {
   }
 }
 
+let form = document.querySelector('form');
+
+function handleSubmit(e){
+
+  e.preventDefault();
+  let custName =  e.target.custName.value;
+  let custMin = parseInt(e.target.custMin.value);
+  let custMax = parseInt(e.target.custMax.value);
+  let custAvg = parseInt(e.target.custAvg.value);
+console.log(  custMin);
+console.log(custMax)
+console.log( custAvg)
+  let newCust = new Store(custName, custMin, custMax, custAvg);
+  // renderFooter.push(newCust);
+  newCust.renderTable();
+  Store.all.push(newCust);
+renderFooter();
+console.log(Store.all);
+}
+
+form.addEventListener('submit', handleSubmit)

@@ -7,13 +7,14 @@
   <title>Salmon Cookies</title>
 
   <link rel="stylesheet" href="css/reset.css">
+  
   <link rel="stylesheet" href="css/style.css">
   
 </head>
 
 <body>
   <header>
-    <h1>Salmon Cookies</h1>
+    <h1 class="salmon-title">Salmon Cookies</h1>
   </header>
     <main>
       <section>
@@ -25,13 +26,13 @@
         <article>
           <h2></h2>
           <h3></h3>
-          <ul>
+          <!-- <ul>
             <li id="seattle">Seattle</li>
             <li id="tokyo">Tokyo</li>
             <li id="dubai">Dubai</li>
             <li id="paris">Paris</li>
             <li id="lima">Lime</li>
-          </ul>
+          </ul> -->
             <h2>Table</h2>
             <div ></div>
            <table>
@@ -51,12 +52,37 @@
             
         </article>
         </section>
+          <aside>
+            <form id="formId">
+              <fieldset>        
+                <legend>Add New Store Data</legend>
+                <label>New Store Name:
+                  <!-- name -->
+                  <input type="text" name="custName" placeholder="Store Name" id="custName">
+                </label>
+                <label>New Store min:
+                  <!-- min -->
+                  <input type="number" name="custMin" placeholder="Min / Cust">
+                </label>
+                <label>New Store max:
+                  <!-- max -->
+                  <input type="number" name="custMax" placeholder="Max / Cust">
+                </label>
+                <label>New Store Avg:
+                  <!-- avg -->
+                  <input type="number" name="custAvg" placeholder="Avg Cookie / Sale">
+                                 
+                </label>
+              </fieldset>
+              <button type="submit">Submit</button>
+            </form>
+          </aside>
       </main>
     
       
         
         
-        <img src="" alt="Description for image" width="400" height="500">
+        <!-- <img src="" alt="Description for image" width="400" height="500"> -->
 </header>
      
   <script src="js/app.js"></script>
