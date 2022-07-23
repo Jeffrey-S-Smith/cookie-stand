@@ -149,5 +149,16 @@ input:required + span:after {
 
 display: flex;
  }
+ .salmon-title{
 
+  display: flex;
+   }
+   .salmon-title{
 
+    display: flex;
+     }
+
+     .nav-bar {
+      background:#999;
+    }
+    

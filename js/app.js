@@ -142,6 +142,4 @@ function handleSubmit(e) {
   console.log(Store.all);
 }
 
-
-
 form.addEventListener("submit", handleSubmit);
