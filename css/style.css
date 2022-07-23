@@ -1,6 +1,7 @@
 table > table, td, th {
   border: 1px solid black;
   border-collapse: collapse;
+  
 }
 
 td, th {
@@ -25,6 +26,13 @@ p, li {
 
 body {
   background-color: salmon;
+  
+}
+
+#sbody {
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 
 .headline {
@@ -70,7 +78,7 @@ body {
 #table-container {
   width: 900px;
   padding: 5px 25px 10px;
-
+  
 }
 
 #sales-title {
@@ -84,9 +92,62 @@ body {
 }
 
 footer {
-  margin-bottom: auto;
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  height:30px;
+  width:100%;
+  background:#999;
+  text-align: center;
 }
 
+.footer {
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  height:30px;
+  width:100%;
+  background:#999;
+  text-align: center;
+  
+}
 
+form {
+ 
+  font-family: 'Quicksand', sans-serif;
+  line-height: 150%;
+  border: 1px solid black;
+  padding: 5px;
+  align-items: center;
+  text-align: center;
+}
+
+button {
+  background-color: blue;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+  
+}
+
+label {
+  display:block;
+}
+input:required + span:after {
+  content: "Required";
+}
+
+.nav-bar {
+  background:#999;
+}
+
+.img-salmon {
+  padding: 20px;
+}
+
+ .salmon-title{
+
+display: flex;
+ }
 
 
