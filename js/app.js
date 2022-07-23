@@ -24,6 +24,7 @@ function Store(name, min, max, avg) {
   this.cookieStoreEachHour = [];
   this.currentTotal = 0;
 
+  
   this.getRandomCustomers = function () {
     return Math.floor(Math.random() * (this.max - this.min + 1) + this.min);
   };
@@ -99,7 +100,6 @@ paris.renderTable();
 lima.renderTable();
 renderFooter();
 
-
 function renderFooter() {
   console.log(Store.length);
   console.log(Store);
@@ -121,27 +121,27 @@ function renderFooter() {
     fTr.appendChild(fHdr);
     tableFooter.appendChild(fTr);
   }
- 
 }
 
-let form = document.querySelector('form');
+let form = document.querySelector("form");
 
-function handleSubmit(e){
-
+function handleSubmit(e) {
   e.preventDefault();
-  let custName =  e.target.custName.value;
+  let custName = e.target.custName.value;
   let custMin = parseInt(e.target.custMin.value);
   let custMax = parseInt(e.target.custMax.value);
   let custAvg = parseInt(e.target.custAvg.value);
-console.log(  custMin);
-console.log(custMax)
-console.log( custAvg)
+  console.log(custMin);
+  console.log(custMax);
+  console.log(custAvg);
   let newCust = new Store(custName, custMin, custMax, custAvg);
-  // renderFooter.push(newCust);
+  //renderFooter.push(newCust);
   newCust.renderTable();
   Store.all.push(newCust);
-renderFooter();
-console.log(Store.all);
+  renderFooter();
+  console.log(Store.all);
 }
 
-form.addEventListener('submit', handleSubmit)
+
+
+form.addEventListener("submit", handleSubmit);
