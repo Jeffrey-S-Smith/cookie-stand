@@ -140,7 +140,7 @@ console.log( custAvg)
   // renderFooter.push(newCust);
   newCust.renderTable();
   Store.all.push(newCust);
-renderFooter();
+
 console.log(Store.all);
 }
 
