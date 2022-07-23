@@ -105,6 +105,7 @@ function renderFooter() {
   console.log(Store);
   console.log(Store.all);
   let tableFooter = document.querySelector("tfoot");
+  
   let fTr = document.createElement("tr");
   let fHdr = document.createElement("th");
   fHdr.textContent = "all stores total";
@@ -118,6 +119,7 @@ function renderFooter() {
     }
     fHdr = document.createElement("th");
     fHdr.textContent = hourlyTotal;
+    tableFooter.innerHTML = "";
     fTr.appendChild(fHdr);
     tableFooter.appendChild(fTr);
   }
@@ -133,15 +135,14 @@ function handleSubmit(e){
   let custMin = parseInt(e.target.custMin.value);
   let custMax = parseInt(e.target.custMax.value);
   let custAvg = parseInt(e.target.custAvg.value);
-console.log(  custMin);
-console.log(custMax)
-console.log( custAvg)
+
   let newCust = new Store(custName, custMin, custMax, custAvg);
-  // renderFooter.push(newCust);
+  
   newCust.renderTable();
   Store.all.push(newCust);
-
-console.log(Store.all);
-}
+  
+  renderFooter();
+  
+  }
 
 form.addEventListener('submit', handleSubmit)
