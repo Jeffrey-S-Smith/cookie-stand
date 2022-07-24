@@ -71,6 +71,15 @@ function Store(name, min, max, avg) {
   };
 }
 
+// function creates a table row and uses the hourly cookies sales array to make table data
+
+function totalPerStore(hour) {
+  for(let i = 1 ; i < hour.length ; i++) {
+    hour[i] = hour[i] + hour[i-1];
+  }
+   return hour;
+}
+
 // for loop hour
 let tableHead = document.querySelector("thead");
 let tr = document.createElement("tr");
@@ -80,6 +89,7 @@ for (let i = 0; i < hours.length; i++) {
   let time = document.createElement("th");
 
   time.textContent = hours[i];
+  
   tr.appendChild(time);
 }
 tableHead.appendChild(tr);
