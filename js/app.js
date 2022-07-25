@@ -138,6 +138,7 @@ function renderFooter() {
     }
     fHdr = document.createElement('th');
     fHdr.textContent = hourlyTotal;
+    tableFooter.innerHTML = '';
     fTr.appendChild(fHdr);
     tableFooter.appendChild(fTr);
   }

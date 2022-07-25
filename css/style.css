@@ -1,7 +1,8 @@
+/* Sales Date Page */
+
 table > table, td, th {
   border: 1px solid black;
   border-collapse: collapse;
-  
 }
 
 td, th {
@@ -24,17 +25,60 @@ p, li {
   color: whitesmoke;
 }
 
+form {
+ 
+  font-family: 'Quicksand', sans-serif;
+  line-height: 150%;
+  border: 1px solid black;
+  padding: 5px;
+  align-items: center;
+  text-align: center;
+}
+
+button {
+  background-color: blue;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+  
+}
+
+section table{
+  justify-items: center;
+  font-family: 'Quicksand', sans-serif;
+  color: green;
+  table-layout: fixed;
+  width: 80%;
+  border: 1px none;
+  border-style: dashed;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+section td{
+  width: 40%;
+  text-align: center;
+}
+
+
+.img-salmon {
+  padding: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ 
+
+
+/* For both pages */
+
 body {
   background-color: salmon;
   
 }
 
-#sbody {
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
-
+/* index Homepage */
 .headline {
   font-family: 'Libre Bodoni', serif;
   font-family: 'Suez One', serif;
@@ -52,6 +96,14 @@ body {
   padding-bottom: 10px;
 }
 
+#about p {
+  width: 500px;
+  margin: 0 auto;
+}
+
+
+/* My images */
+
 #chinook {
   display: block;
   margin: 0 auto;
@@ -66,31 +118,12 @@ body {
   padding: 20px;
 }
 
-#about p {
-  width: 500px;
-  margin: 0 auto;
-}
-
-#title {
-  color: black;
-}
-
 #table-container {
   width: 900px;
   padding: 5px 25px 10px;
-  
 }
 
-#sales-title {
-  color: silver;
-  font-family: Arial, Helvetica;
-}
-
-#new-store-form {
-  width: 1225px;
-  margin: 0 auto;
-}
-
+/* Footer */
 footer {
   position:fixed;
   left:0px;
@@ -112,42 +145,23 @@ footer {
   
 }
 
-form {
- 
+aside{
+  width: 400px;
+  margin: auto;
+}
+
+form{
   font-family: 'Quicksand', sans-serif;
+  color: #B2B1CF;
   line-height: 150%;
   border: 1px solid black;
   padding: 5px;
   align-items: center;
   text-align: center;
+  background-color: white;
+} 
+
+
+legend{
+  font-size: larger;
 }
-
-button {
-  background-color: blue;
-  color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
-  
-}
-
-label {
-  display:block;
-}
-input:required + span:after {
-  content: "Required";
-}
-
-.nav-bar {
-  background:#999;
-}
-
-.img-salmon {
-  padding: 20px;
-}
-
- .salmon-title{
-
-display: flex;
- }
-
-
